@@ -2,6 +2,8 @@
 
 ## Overview
 A comprehensive Retail Sales Management System built with modern web technologies. The system provides advanced search, filtering, sorting, and pagination capabilities for managing large-scale sales transaction data. The application features a beautiful, responsive UI with smooth animations and an intuitive user experience.
+<img width="1890" height="847" alt="image" src="https://github.com/user-attachments/assets/888b9acd-fd67-4c7d-9295-7a44a70d620f" />
+
 
 ## Tech Stack
 - **Frontend**: React 18, Vite, Framer Motion (animations), Axios
