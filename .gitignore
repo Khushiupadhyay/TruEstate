@@ -1,0 +1,8 @@
+﻿node_modules
+dist
+build
+.tru
+truestate_assignment_dataset.csv
+*.log
+.DS_Store
+.env

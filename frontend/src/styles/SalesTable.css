@@ -1,0 +1,144 @@
+.sales-table-container {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: var(--surface);
+}
+
+.sales-table thead {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+}
+
+.sales-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.sales-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: all 0.2s ease;
+  background: var(--surface);
+}
+
+.sales-table tbody tr:hover {
+  background: #f8f9ff;
+}
+
+.sales-table td {
+  padding: 1rem;
+  color: var(--text-primary);
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+.transaction-id {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.customer-id {
+  color: var(--text-secondary);
+  font-family: 'Courier New', monospace;
+}
+
+.customer-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-primary);
+}
+
+.link-icon {
+  color: var(--primary-color);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.link-icon:hover {
+  opacity: 1;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+}
+
+.quantity-cell {
+  text-align: center;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: 'Courier New', monospace;
+}
+
+.no-results {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.no-results svg {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.no-results h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.no-results p {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1200px) {
+  .sales-table {
+    font-size: 0.85rem;
+  }
+  
+  .sales-table th,
+  .sales-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+  
+  .sales-table {
+    min-width: 1200px;
+  }
+}
+
